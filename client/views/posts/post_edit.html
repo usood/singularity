@@ -1,0 +1,36 @@
+<template name="post_edit">
+  {{> admin_navbar}}
+  <div class="row">
+    {{> admin_menu}}
+    <div class="col s10">
+      <div class="container admin">
+        <div class="card-panel">
+          <h2 class="blue-text text-darken-2">{{title}}</h2>
+          <h6><strong>Author:</strong> {{ authorName }}</h6>
+          <h6><strong>Last Edited:</strong> {{formatDate publishedOn }}</h6>
+          <form name="new-post" id=new-post>
+            <div class="row">
+              <div class="col s5">
+                <div class="input-field">
+                  <input id="post-title" type="text" name="title" class="validate" placeholder="Title" required>
+                </div>
+              </div>
+              <div class="col s5">
+                <div class="input-field">
+                  <input id="post-slug" type="text" name="slug" class="validate" placeholder="Slug">
+                </div>
+              </div>
+            </div>
+            <div class="input-field col s12">
+              <textarea id="post-body" name="body" class="materialize-textarea" placeholder="Body" required></textarea>
+            </div>
+            <button class="btn waves-effect waves-light blue darken-2" type="submit" name="submit-post">Save
+              <i class="mdi-content-send right"></i>
+            </button>
+          </form>
+          <h5 class="red-text text-darken-2">{{ error }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

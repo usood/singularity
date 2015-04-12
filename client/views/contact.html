@@ -1,0 +1,33 @@
+<template name="contact">
+  {{> navbar}}
+	<div class="container">
+		<div class="card-panel">
+			<form id="contact">
+  			<h4 class="blue-text text-darken-2">Contact</h4>
+  			<div class="input-field">
+    			<input type="text" name="name" class="mui-form-control" placeholder="Name" required>
+  			</div>
+  			<div class="input-field">
+    			<input type="text" name="subject" class="mui-form-control" placeholder="Subject">
+  			</div>
+  			<div class="input-field">
+    			<input type="email" name="email"  class="mui-form-control" placeholder="Email" required>
+  			</div>
+  			<div class="input-field">
+    			<textarea name="comments" class="materialize-textarea" placeholder="Comments, questions, and feedback" requireds></textarea>
+  			</div>
+  			<input type="hidden" name="blank"  class="mui-form-control">
+  			<button type="submit" class="btn waves-effect waves-light blue darken-2">Submit
+          <i class="mdi-content-send right"></i>
+        </button>
+			</form>
+			{{#if emailSuccess}}
+				<h3 class="color--green">{{ message }}</h3>
+			{{/if}}
+			{{#if emailError}}
+				<h3 class="color--red">{{ error }}</h3>
+			{{/if}}
+		</div><!-- /.miu-panel -->
+	</div><!-- /.container -->
+  {{> footer}}
+</template>

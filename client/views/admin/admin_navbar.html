@@ -1,0 +1,15 @@
+<template name="admin_navbar">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper black">
+        <ul>
+          <li><a href="/">Meteor Material Blog</a></li>
+        </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>Welcome, {{currentUser.profile.name}}</li>
+          <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</template>

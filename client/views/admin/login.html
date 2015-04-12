@@ -1,0 +1,27 @@
+<template name="login">
+  <div class="container">
+    <div class="card-panel">
+      <h4 class="blue-text text-darken-2">Login</h4>
+      <div class="row">
+        <form class="col s12" id="login-form">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" name="email" type="email" class="validate" required>
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" name="password" type="password" class="validate" required>
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <button id="login" class="btn waves-effect waves-light blue darken-2" type="submit" name="submit-post">Submit
+            <i class="mdi-content-send right"></i>
+          </button>
+        </form>
+      </div>
+      <h5 class="red-text text-darken-2">{{ error }}</h5>
+    </div>
+  </div>
+</template>

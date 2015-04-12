@@ -1,0 +1,56 @@
+<template name="new_user">
+  {{> admin_navbar}}
+  <div class="row">
+    {{> admin_menu}}
+    <div class="col s10">
+      <div class="container admin">
+        <div class="card-panel">
+          <h4 class="blue-text text-darken-2">New User</h4>
+          <div class="row">
+            <form class="col s12" id="new-user-form">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" name="first-name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" name="last-name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="username" name="username" type="text" class="validate" required>
+                  <label for="username">Username</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" name="email" type="email" class="validate" required>
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" name="password" type="password" class="validate" required>
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <p>
+                <input name="role" type="radio" id="author" value="author" checked />
+                <label for="author">Author</label>
+              </p>
+              <p>
+                <input name="role" type="radio" id="admin" value="admin"/>
+                <label for="admin">Admin</label>
+              </p>
+              <button id="register" class="btn waves-effect waves-light blue darken-2" type="submit">Submit
+                <i class="mdi-content-send right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
