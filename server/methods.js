@@ -13,7 +13,7 @@ Meteor.methods({
       }
     }
     postData.slug = postData.slug.trim().toLowerCase();
-    postData.summary = postData.body.substring(0, 200);
+    postData.summary = postData.body.substring(0, 200).trim();
     if ( Meteor.user() ) {
       Posts.insert(postData);
     }
@@ -23,7 +23,7 @@ Meteor.methods({
     var user = Meteor.user();
     var post = Posts.findOne({_id: postId});
     postData.slug = postData.slug.trim().toLowerCase();
-    postData.summary = postData.body.substring(0, 200);
+    postData.summary = postData.body.substring(0, 200).trim();
     
     if ( user && (post.authorId === user._id || user.roles === 'admin') ) {
       Posts.update(postId, {$set: postData});
