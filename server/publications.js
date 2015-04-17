@@ -16,6 +16,10 @@ Meteor.publish('post-edit', function(slug) {
   } 
 });
 
+Meteor.publish('post-comments', function(postId) {
+  return Comments.find({ postId: postId });
+});
+
 Meteor.publish(null, function() {
  if (this.userId) {
    return Meteor.users.find(
