@@ -17,9 +17,9 @@ Template.post_new.events({
   "submit form": function(event) {
     event.preventDefault();
     var post = {
-      title: $('input[name=title').val(),
-      slug: $('input[name=slug').val(),
-      body: $('textarea[name=body').val()
+      title: $('input[name=title').val().trim(),
+      slug: $('input[name=slug').val().trim(),
+      body: $('textarea[name=body').val().replace(/\n/g, '<br />')
     }
     Meteor.call('newPost', post, function(error) {
       if (error) {
