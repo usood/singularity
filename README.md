@@ -8,6 +8,8 @@ This is boilerplate Meteor Material blog designed for anyone to start their own 
 * Slug-based URLs (editable)
 * Multiple roles (admin/author)
 * Admin dashboard
+* Add and delete users
+* Comments
 
 ## Setup
 
@@ -35,9 +37,8 @@ All users with *roles: 'author'* can create new posts and edit *their own* posts
 
 ## WIP
 
-1. Comment system
+1. Comment system (done but needs login requirement)
 2. Social sharing
 3. Post tags and searching
 3. Widgets
 4. Pagination
-5. Distribute as Atmostphere package

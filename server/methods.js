@@ -52,6 +52,15 @@ Meteor.methods({
     }
   },
   
+  deleteUser: function(userID) {
+    var currentUser = Meteor.user();
+    if ( currentUser && currentUser._id !== userID ) {
+      Meteor.users.remove(userID);
+    } else {
+      throw new Meteor.Error('not-allowed', 'Cannot remove logged in user.');
+    }
+  },
+  
   sendEmail: function (to, from, subject, text) {
     check([to, from, subject, text], [String]);
 

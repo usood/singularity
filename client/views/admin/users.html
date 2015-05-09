@@ -1,0 +1,37 @@
+<template name="users">
+  {{> admin_navbar}}
+  <div class="row">
+    {{> admin_menu}}
+    <div class="col s10">
+      <div class="container admin">
+        <div class="card-panel">
+          <h5 class="red-text text-darken-2">{{ error }}</h5>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each allUsers}}
+              <tr>
+                <td>{{ profile.name }}</td>
+                <td>
+                  {{#each emails}}
+                    {{ address }}
+                  {{/each}}
+                </td>
+                <td>{{ roles }}</td>
+                <td><a href="#" data="{{_id}}" class="red-text" id="delete">Delete</a></td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

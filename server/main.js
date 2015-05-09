@@ -4,10 +4,10 @@
 /*
 if (Meteor.users.find().count() === 0) {
   var userObj = {
-      username: 'username', 
-      email: 'username@gmail.com', 
-      password: 'username1234',
-      profile: {name: 'Your Name'},
+      username: 'admin', 
+      email: 'admin@example.com', 
+      password: 'admin',
+      profile: {name: 'Admin'},
       roles: 'admin',
     };
   Accounts.createUser(userObj);

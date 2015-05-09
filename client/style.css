@@ -13,3 +13,6 @@ body {
 img.responsive-img {
   margin-right: 10px;
 }
+textarea.materialize-textarea {
+  height: 250px;
+}
