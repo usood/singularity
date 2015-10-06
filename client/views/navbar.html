@@ -1,16 +1,31 @@
 <template name="navbar">
   <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper blue darken-2">
-        <div class="container">
-          <a href="/" class="brand-logo">Meteor Material Blog</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <nav class="blue darken-2">
+      <div class="container">
+        <div class="nav-wrapper blue darken-2">
+          <a href="/" id="logo-container" class="brand-logo">Meteor Material Blog</a>
+          <ul  class="right hide-on-med-and-down">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </div>
       </div>
     </nav>
   </div>
+
+  <script type="text/javascript">
+  (function($) {
+    $(function() {
+      $('.button-collapse').sideNav();
+      $('.scrollspy').scrollSpy();
+    });
+  })(jQuery);
+  </script>
 </template>
