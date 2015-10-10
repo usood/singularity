@@ -21,6 +21,10 @@ img.responsive-img {
   height: 250px;
 }
 
+.note-editor {
+  height: 400px;
+}
+
 
 .btn.btn-facebook {
   border-radius: 4px;

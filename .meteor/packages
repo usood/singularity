@@ -23,3 +23,5 @@ spacebars
 check
 materialize:materialize@=0.97.0
 fortawesome:fontawesome
+summernote:summernote
+djedi:sanitize-html

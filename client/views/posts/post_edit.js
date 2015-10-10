@@ -4,9 +4,10 @@ Template.post_edit.onCreated(function () {
 
 Template.post_edit.onRendered(function() {
   var post = Template.instance().data;
+  $('#summernote').summernote();
   $('input[name=title]').val(post.title);
   $('input[name=slug]').val(post.slug);
-  $('textarea[name=body]').val(post.body);
+  $('.note-editable').html(post.body);
 });
 
 Template.post_edit.helpers({
@@ -27,7 +28,7 @@ Template.post_edit.events({
     var post = {
       title: $('input[name=title').val(),
       slug: $('input[name=slug').val(),
-      body: $('textarea[name=body').val()
+      body: $('#summernote').code()
     }
     Meteor.call('editPost', id, post, function(error) {
       if (error) {

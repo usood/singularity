@@ -2,6 +2,10 @@ Template.post_new.onCreated(function () {
   this.error = new ReactiveVar('');
 });
 
+Template.post_new.onRendered(function() {
+  $('#summernote').summernote();
+})
+
 Template.post_new.helpers({
   error: function() {
     return Template.instance().error.get();
@@ -19,7 +23,7 @@ Template.post_new.events({
     var post = {
       title: $('input[name=title').val().trim(),
       slug: $('input[name=slug').val().trim(),
-      body: $('textarea[name=body').val().replace(/\n/g, '<br />')
+      body: $('#summernote').code()
     }
     Meteor.call('newPost', post, function(error) {
       if (error) {

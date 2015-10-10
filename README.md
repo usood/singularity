@@ -2,6 +2,13 @@
 
 This is boilerplate Meteor Material blog designed for anyone to start their own blog. This is still in a work in progress and contributions are welcome. You can see an example at http://material-blog.meteor.com/
 
+## Updates (Oct 9th, 2015)
+
+* Upgraded Meteor to 1.2
+* Update all packages
+* Added wysiwyg editor
+* Sanitize html on server
+
 ## Features
 
 * Material Design
@@ -25,11 +32,11 @@ meteor add reactive-var
 
 ## Usage
 
-**Admin:** 
+**Admin:**
 
-The admin dashboard area is at */admin* and can only be access via a logged in user. Any user can create a post but only the admin can create new users. The authentification is verified via a *roles: 'admin'* attribute on the user account. 
+The admin dashboard area is at */admin* and can only be access via a logged in user. Any user can create a post but only the admin can create new users. The authentification is verified via a *roles: 'admin'* attribute on the user account.
 
-The admin can view, edit, and delete all posts. 
+The admin can view, edit, and delete all posts.
 
 **Author:**
 
@@ -38,7 +45,6 @@ All users with *roles: 'author'* can create new posts and edit *their own* posts
 ## WIP
 
 1. Comment system (done but needs login requirement)
-2. Social sharing
-3. Post tags and searching
+2. Post tags and searching
 3. Widgets
 4. Pagination
