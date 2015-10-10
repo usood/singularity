@@ -4,7 +4,7 @@ This is boilerplate Meteor Material blog designed for anyone to start their own 
 
 ## Updates (Oct 9th, 2015)
 
-* Upgraded Meteor to 1.2
+* Upgraded Meteor to 1.2 (thanks to contribution by fabiomirandaa)
 * Update all packages
 * Added wysiwyg editor
 * Sanitize html on server
