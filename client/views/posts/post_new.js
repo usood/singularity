@@ -23,11 +23,10 @@ Template.post_new.events({
   "submit form": function(event) {
     event.preventDefault();
     var post = {
-      title: $('input[name=title').val().trim(),
-      slug: $('input[name=slug').val().trim(),
-      lang: $('input[name=lang').val().trim() ,
-      book: $('input[name=book').val().trim(),
-      chapter: $('input[name=chapter').val().trim(),
+      title: $('input[name=title]').val().trim(),
+      lang: $('select[name=lang]').val().trim() ,
+      book: $('select[name=book]').val().trim(),
+      chapter: $('select[name=chapter]').val().trim(),
       body: $('#summernote').summernote('code')
     }
     Meteor.call('newPost', post, function(error) {
