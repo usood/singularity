@@ -25,3 +25,4 @@ materialize:materialize
 fortawesome:fontawesome
 summernote:summernote
 djedi:sanitize-html
+reactive-dict

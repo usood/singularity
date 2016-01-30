@@ -9,7 +9,8 @@
           <h4><strong>Author:</strong> {{ authorName }}</h4>
           <h6><strong>Published:</strong> {{formatDate publishedOn }}</h6>
           <form name="new-post" id=new-post>
-            <div class="row">
+              <input id="post-slug" type="text" name="slug" class="validate" hidden>
+              <div class="row">
                 <div class="col s5">
                 <div class="input-field">
                   <input id="post-title" type="text" name="title" class="validate" required>
