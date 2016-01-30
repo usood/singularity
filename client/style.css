@@ -73,7 +73,12 @@ button, button:focus, button:active, button:hover {
   margin-bottom: 15px
 }
 .nav-wrapper {
-  padding-left: 10px;
+    padding-left: 70px;
+  }
+@media only screen and (min-width: 601px) { /* <- really bad code */
+  .nav-wrapper {
+    padding-left: 74px;
+  }
 }
 .navbar-fixed a {
   text-decoration: none
@@ -83,6 +88,17 @@ button, button:focus, button:active, button:hover {
 }
 #nav-mobile > li > a {
   font-size: 16px
+}
+#nav-logo-img {
+  background: #FFF;
+  width: 64px;
+  padding: 10px;
+  height: 100%;
+  position: absolute;
+}
+#nav-logo-img img {
+  width: 100%;
+  display: block;
 }
 
 /* enable absolute positioning */
