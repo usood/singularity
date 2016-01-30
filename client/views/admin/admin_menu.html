@@ -1,26 +1,26 @@
 <template name="admin_menu">
   <div class="col s2">
-      <div class="card-panel black admin-menu">
+      <div class="card-panel blue admin-menu">
         <ul>
           <li>
-            <a href="/admin" class="waves-effect waves-light btn black white-text"><i class="mdi-action-dashboard left"></i>
-            <span>My Notes</span>
+            <a href="/admin" class="waves-effect waves-light btn blue white-text"><i class="mdi-action-dashboard left"></i>
+              <span>My Notes</span>
             </a>
           </li>
           <li>
-            <a href="/admin/new-post" class="waves-effect waves-light btn black white-text"><i class="mdi-editor-border-color left"></i>
+            <a href="/admin/new-post" class="waves-effect waves-light btn blue white-text"><i class="mdi-editor-border-color left"></i>
               <span>Add New Post</span>
             </a>
           </li>
           {{#if isAdmin currentUser}}
           <li>
-            <a href="/admin/add-new-user" class="waves-effect waves-light btn black white-text"><i class="mdi-action-account-child left"></i>
+            <a href="/admin/add-new-user" class="waves-effect waves-light btn blue white-text"><i class="mdi-action-account-child left"></i>
             <span>Add New User</span>
             </a>
           </li>
           {{/if}}
           <li>
-            <a href="/admin/users" class="waves-effect waves-light btn black white-text"><i class="mdi-action-account-box left"></i>
+            <a href="/admin/users" class="waves-effect waves-light btn blue white-text"><i class="mdi-action-account-box left"></i>
             <span>Users</span>
             </a>
           </li>

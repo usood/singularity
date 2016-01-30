@@ -25,6 +25,9 @@ img.responsive-img {
   height: 400px;
 }
 
+nav ul a {
+  font-size: 14px
+}
 
 .btn.btn-facebook {
   border-radius: 4px;
