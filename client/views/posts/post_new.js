@@ -24,6 +24,7 @@ Template.post_new.events({
     event.preventDefault();
     var post = {
       title: $('input[name=title]').val().trim(),
+      slug: $('input[name=slug]').val(),
       lang: $('select[name=lang]').val().trim() ,
       book: $('select[name=book]').val().trim(),
       chapter: $('select[name=chapter]').val().trim(),

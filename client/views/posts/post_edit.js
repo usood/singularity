@@ -28,6 +28,9 @@ Template.post_edit.events({
     var post = {
       title: $('input[name=title]').val(),
       slug: $('input[name=slug]').val(),
+      lang: $('select[name=lang]').val().trim() ,
+      book: $('select[name=book]').val().trim(),
+      chapter: $('select[name=chapter]').val().trim(),
       body: $('#summernote').summernote('code')
     }
     Meteor.call('editPost', id, post, function(error) {
