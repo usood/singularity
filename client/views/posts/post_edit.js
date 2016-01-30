@@ -18,16 +18,16 @@ Template.post_edit.helpers({
 
 Template.post_edit.events({
   "keyup #post-title": function(event) {
-    var slug = $('input[name=title').val();
+    var slug = $('input[name=title]').val();
     slug = slug.replace(/\s+/g, '-').trim().toLowerCase();
-    $('input[name=slug').val(slug);
+    $('input[name=slug]').val(slug);
   },
   "submit form": function(event, template) {
     event.preventDefault();
     var id = template.data._id;
     var post = {
-      title: $('input[name=title').val(),
-      slug: $('input[name=slug').val(),
+      title: $('input[name=title]').val(),
+      slug: $('input[name=slug]').val(),
       body: $('#summernote').summernote('code')
     }
     Meteor.call('editPost', id, post, function(error) {
