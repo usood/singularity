@@ -5,7 +5,7 @@
 if (Meteor.users.find().count() === 0) {
   var userObj = {
       username: 'admin', 
-      email: 'admin@eklavya.in',
+      email: 'upahar.sood@gmail.com',
       password: 'admin',
       profile: {name: 'Admin'},
       roles: 'admin',

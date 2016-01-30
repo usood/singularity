@@ -3,7 +3,9 @@ Template.post_new.onCreated(function () {
 });
 
 Template.post_new.onRendered(function() {
-  $('#summernote').summernote();
+  $('#summernote').summernote({
+    fontNames: ['Arial','Hind'],fontNamesIgnoreCheck: ['Hind']
+  });
 })
 
 Template.post_new.helpers({
@@ -23,7 +25,7 @@ Template.post_new.events({
     var post = {
       title: $('input[name=title').val().trim(),
       slug: $('input[name=slug').val().trim(),
-      body: $('#summernote').code()
+      body: $('#summernote').summernote('code')
     }
     Meteor.call('newPost', post, function(error) {
       if (error) {
