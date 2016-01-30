@@ -1,4 +1,4 @@
-Template.navbar.onRendered(function() {
-    $('.button-collapse').sideNav();
-    $('.scrollspy').scrollSpy();
-});
+// Template.navbar.onRendered(function() {
+//     $('.button-collapse').sideNav();
+//     $('.scrollspy').scrollSpy();
+// });
