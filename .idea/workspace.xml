@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="022d0664-620e-4c31-aca3-e7f8c420a883" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/posts/post_edit.js" afterPath="$PROJECT_DIR$/client/views/posts/post_edit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/posts/post_new.js" afterPath="$PROJECT_DIR$/client/views/posts/post_new.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/posts/posts_list.js" afterPath="$PROJECT_DIR$/client/views/posts/posts_list.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="singularity.iws" />
@@ -23,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="post_edit.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="post_edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/posts/post_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -36,18 +39,38 @@
       <file leaf-file-name="post_new.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/posts/post_new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0">
-              <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
+            <state vertical-scroll-proportion="8.75">
+              <caret line="16" column="86" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="86" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post_single.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/posts/post_single.html">
+      <file leaf-file-name="posts_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/posts/posts_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125">
-              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state vertical-scroll-proportion="-26.875">
+              <caret line="47" column="12" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts_list.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/views/posts/posts_list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.56666666">
+              <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_edit.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/posts/post_edit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.444445">
+              <caret line="29" column="40" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -56,8 +79,18 @@
       <file leaf-file-name="post_new.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/posts/post_new.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.2222223">
+              <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_single.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/posts/post_single.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,13 +134,15 @@
         <option value="$PROJECT_DIR$/client/views/home.html" />
         <option value="$PROJECT_DIR$/client/views/navbar.html" />
         <option value="$PROJECT_DIR$/client/views/posts/posts_list.html" />
-        <option value="$PROJECT_DIR$/client/views/posts/posts_list.js" />
         <option value="$PROJECT_DIR$/client/views/admin/admin_navbar.html" />
-        <option value="$PROJECT_DIR$/client/views/posts/post_new.js" />
         <option value="$PROJECT_DIR$/client/views/posts/post_new.html" />
         <option value="$PROJECT_DIR$/client/views/admin/admin.html" />
         <option value="$PROJECT_DIR$/lib/router.js" />
         <option value="$PROJECT_DIR$/client/views/posts/post_single.html" />
+        <option value="$PROJECT_DIR$/client/views/posts/post_edit.html" />
+        <option value="$PROJECT_DIR$/client/views/posts/post_edit.js" />
+        <option value="$PROJECT_DIR$/client/views/posts/post_new.js" />
+        <option value="$PROJECT_DIR$/client/views/posts/posts_list.js" />
       </list>
     </option>
   </component>
@@ -551,26 +586,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/posts_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2222223">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/admin/admin_navbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.875">
           <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/post_single.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -631,38 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/post_edit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/posts_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.625">
-          <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/post_single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/post_new.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40880504">
@@ -679,18 +666,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/post_new.html">
+    <entry file="file://$PROJECT_DIR$/client/views/posts/post_single.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
+        <state vertical-scroll-proportion="0.86092716">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/posts/post_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/posts/post_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.75">
+          <caret line="16" column="86" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/posts/post_single.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/posts/post_edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.444445">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/posts/post_new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2222223">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/posts/posts_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.875">
+          <caret line="47" column="12" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/posts/posts_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56666666">
+          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
           <folding />
         </state>
       </provider>

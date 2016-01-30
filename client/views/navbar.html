@@ -1,6 +1,21 @@
 <template name="navbar">
   <div class="navbar-fixed">
     <nav class="blue darken-2">
+      <div class="nav-wrapper">
+        <a href="/" id="logo-container" class="brand-logo">Eklavya</a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+          <li><a href="/admin/login">Login</a></li>
+        </ul>
+        <ul class="side-nav" id="nav-mobile">
+          <li><a href="/">Home</a></li>
+          <li><a href="/admin/login">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<!--     <nav class="blue darken-2">
       <div class="container">
         <div class="nav-wrapper blue darken-2">
           <a href="/" id="logo-container" class="brand-logo">Eklavya</a>
@@ -15,14 +30,13 @@
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </div>
       </div>
-    </nav>
+    </nav> -->
   </div>
 
   <script type="text/javascript">
   (function($) {
     $(function() {
       $('.button-collapse').sideNav();
-      $('.scrollspy').scrollSpy();
     });
   })(jQuery);
   </script>
