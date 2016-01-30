@@ -1,5 +1,9 @@
 body {
-  background-color: rgb(224, 224, 224)
+  background-color: rgb(224, 224, 224);
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  padding: 0
 }
 .admin-menu > ul > li > a.btn {
   padding: 0;
@@ -16,7 +20,9 @@ img.responsive-img {
 .edit {
   float: right;
 }
-
+label {
+  font-size: 13px;
+}
 #post-body {
   height: 250px;
 }
@@ -55,4 +61,20 @@ nav ul a {
 .btn.btn-google-plus:hover,
 .btn.btn-google-plus:focus {
   color: #FFFFFF;
+}
+
+
+
+/* Header */
+.navbar-fixed {
+  margin-bottom: 15px
+}
+.navbar-fixed a {
+  text-decoration: none
+}
+#logo-container {
+  font-weight: bold
+}
+#nav-mobile > li > a {
+  font-size: 16px
 }
