@@ -5,7 +5,12 @@
       <h4 class="blue-text text-darken-2">{{ title }}</h4>
       <h6>by {{ authorName }}</h6>
       <h6>{{formatDate publishedOn }}</h6>
-      <p>{{{ body }}}</p>
+      <h6>book : {{ book }}</h6>
+      <h6>chapter : {{ chapter }}</h6>
+      <h6>language : {{ lang }}</h6>
+      <div class="well">
+        <p>{{{ body }}}</p>
+      </div>
       {{#if currentUser}}
         {{#if isPostAuthor authorId}}
           <a href="/admin/edit/{{slug}}" class="waves-effect waves-light btn blue darken-2 edit">Edit</a>
