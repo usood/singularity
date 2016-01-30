@@ -16,9 +16,9 @@ Template.post_new.helpers({
 
 Template.post_new.events({
   "keyup #post-title": function(event) {
-    var slug = $('input[name=title').val();
+    var slug = $('input[name=title]').val();
     slug = slug.replace(/\s+/g, '-').trim().toLowerCase();
-    $('input[name=slug').val(slug);
+    $('input[name=slug]').val(slug);
   },
   "submit form": function(event) {
     event.preventDefault();

@@ -1,47 +1,50 @@
 <template name="admin">
-  {{> admin_navbar}}
-  <div class="row">
-    {{> admin_menu}}
-    <div class="col s10">
-      <div class="container admin">
-        <div class="card-panel">
-          <h5 class="red-text text-darken-2">{{ error }}</h5>
-          <table class="striped">
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Date</th>
-                <th style="width: 40%;">Preview</th>
-              </tr>
-            </thead>
-            <tbody>
-              {{#each posts}}
-                <tr>
-                  <td>{{ title }}<br /><a href="/admin/edit/{{slug}}">Edit</a> <a href="/posts/{{slug}}">View</a> <a href="#" data="{{_id}}" class="red-text" id="delete">Delete</a></td>
-                  <td>{{ authorName }}</td>
-                  <td>{{ formatDate publishedOn }}</td>
-                  <td>{{{ summary }}}</td>
-                </tr>
-              {{/each}}
-            </tbody>
-          </table>
+    {{> admin_navbar}}
+    <div class="row">
+        {{> admin_menu}}
+        <div class="col s10">
+            <div class="container admin">
+                <div class="card-panel">
+                    <h5 class="red-text text-darken-2">{{ error }}</h5>
+                    <table class="striped">
+                        <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Date</th>
+                            <th style="width: 40%;">Preview</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#each posts}}
+                            <tr>
+                                <td>{{ title }}<br/><a href="/admin/edit/{{slug}}">Edit</a> <a href="/posts/{{slug}}">View</a>
+                                    <a href="#" data="{{_id}}" class="red-text" id="delete">Delete</a></td>
+                                <td>{{ authorName }}</td>
+                                <td>{{ formatDate publishedOn }}</td>
+                                <td>{{{ summary }}}</td>
+                            </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal modal-fixed-footer">
-    <div class="modal-content">
-      <h4 class="red-text">Delete Post</h4>
-      <p>Are you sure you really want to delete this post?</p>
-      <p>This cannot be undone.</p>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4 class="red-text">Delete Post</h4>
+
+            <p>Are you sure you really want to delete this post?</p>
+
+            <p>This cannot be undone.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat confirm">Yes</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat confirm">No</a>
+        </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat confirm">Yes</a>
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat confirm">No</a>
-    </div>
-  </div>
-  
+
 </template>
